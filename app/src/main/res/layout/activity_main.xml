@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/taskEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/round"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="start"
+        android:hint="Enter Tasks "
+        android:paddingStart="10dp"
+        android:textColorHint="@color/black"
+        tools:ignore="RtlSymmetry" />
+
+    <TextView
+        android:id="@+id/addButton"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="Add Task"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:background="@drawable/buton"
+        android:layout_below="@id/taskEditText"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="16dp"/>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/addButton"
+        android:layout_marginTop="16dp"/>
+</RelativeLayout>
